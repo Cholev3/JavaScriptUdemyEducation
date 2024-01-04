@@ -8,9 +8,9 @@ let tips = [];
 let totals = [];
 
 for (let i = 0; i < bills.length; i++) {
-    let currentCommand = bills[i];
-    tips.push(calcTip(currentCommand));
-    totals.push(currentCommand + calcTip(currentCommand))
+    let currentBill = bills[i];
+    tips.push(calcTip(currentBill));
+    totals.push(currentBill + calcTip(currentBill))
 }
 
 function calcAverage(arr) {
